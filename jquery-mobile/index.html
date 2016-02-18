@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First jQuery Mobile Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>	
+<script>
+$(function() {
+$( "[data-role='navbar']" ).navbar();
+$( "[data-role='header'], [data-role='footer']" ).toolbar();
+});
+</script>
+
+</head>
+<body>
+<!-- Home Page -->
+<div data-role="page">
+	<div data-role="header">My First jQuery Mobile Site</div>
+	<div role="main" class="ui-content">
+		<ul data-role="listview" data-inset="true">
+			<li data-icon="shop"><a data-transition="slidefade" href="work.html">
+				See my work</a></li>
+			<li data-icon="star"><a href="" data-transition="slidefade">About me</a></li>
+			<li data-icon="mail"><a href="" data-transition="slidefade">Contact me</a></li>
+		</ul>
+	</div>
+</div>
+<!-- Persistent Footer outside of page! -->
+<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+	<ul>
+		<li><a data-icon="home" href="index.html" data-transition="slidefade">
+			Home</a></li>
+
+		<li><a data-icon="shop" href="work.html" data-transition="slidefade">
+			Work</a></li>
+		<li><a data-transition="slidefade" data-icon="star" href="about.html">About</a></li>
+		<li><a data-transition="slidefade" data-icon="mail" href="contact.html">Contact</a></li>
+	</ul>			
+	</div>
+</div>
+
+</body>
+</html>
